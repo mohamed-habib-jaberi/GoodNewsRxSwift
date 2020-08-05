@@ -26,7 +26,7 @@ class NewsTableViewController: UITableViewController {
 
     private func populateNews(){
         
-        let url = URL(string: "http://newsapi.org/v2/everything?q=bitcoin&from=2020-20-07&sortBy=publishedAt&apiKey=eb10f138ce4c4fa7b4187ddefc69bb67")!
+//        let url = URL(string: "http://newsapi.org/v2/everything?q=bitcoin&from=2020-20-07&sortBy=publishedAt&apiKey=eb10f138ce4c4fa7b4187ddefc69bb67")!
         
 //        Observable.just(url)
 //            .flatMap { (url) -> Observable<Data> in
@@ -50,8 +50,8 @@ class NewsTableViewController: UITableViewController {
         
         
         // Refactor code 
-        let ressource = Ressource<ArticleList>(url: url)
-        URLRequest.load(ressource: ressource)
+       // let ressource = Ressource<ArticleList>(url: url)
+        URLRequest.load(ressource: ArticleList.all)
             .subscribe(onNext: { [weak self] result in
                 
                 if let result = result {
