@@ -12,6 +12,10 @@ import RxCocoa
 
 class NewsTableViewController: UITableViewController {
 
+    let disposeBag = DisposeBag()
+    
+    private var articles = [Article]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,12 +36,13 @@ class NewsTableViewController: UITableViewController {
         }.subscribe(onNext: { [weak self] articles in
             
             if let articles = articles {
+                self?.articles = articles
                 DispatchQueue.main.async {
-                    self.tableView.reloadData()
+                    self?.tableView.reloadData()
                 }
             }
             
-        })
+        }).disposed(by:disposeBag)
     }
     // MARK: - Table view data source
 
