@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -71,7 +71,7 @@
 		6147001824DAF89A00C58F7A /* GoodNewsRxSwift */ = {
 			isa = PBXGroup;
 			children = (
-				6147002D24DAF9E500C58F7A /* NewsTableViewController.swift */,
+				6147002F24DB02ED00C58F7A /* Controllers */,
 				6147001924DAF89A00C58F7A /* AppDelegate.swift */,
 				6147001B24DAF89A00C58F7A /* SceneDelegate.swift */,
 				6147001F24DAF89A00C58F7A /* Main.storyboard */,
@@ -82,13 +82,20 @@
 			path = GoodNewsRxSwift;
 			sourceTree = "<group>";
 		};
+		6147002F24DB02ED00C58F7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6147002D24DAF9E500C58F7A /* NewsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		8D3C68D1BBAB2C1852476B9C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				80052C6D5B5D0B44D5C0A233 /* Pods-GoodNewsRxSwift.debug.xcconfig */,
 				859FC7C44AF527DB5685BD5A /* Pods-GoodNewsRxSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
