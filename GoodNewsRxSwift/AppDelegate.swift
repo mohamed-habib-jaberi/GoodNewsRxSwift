@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Change background color of NavigationBar
              let coloredAppearance = UINavigationBarAppearance()
                     coloredAppearance.configureWithOpaqueBackground()
-                    coloredAppearance.backgroundColor = .darkGray
+          // rgba(142, 68, 173,1.0)
+        //site Color : https://flatuicolors.com/palette/defo
+        coloredAppearance.backgroundColor = UIColor(displayP3Red: 142/255, green: 68/255, blue: 173/255, alpha: 1.0)
                     coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
                     coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
                            
